@@ -1,5 +1,6 @@
 from javascript import require, On
 import time
+import csv
 from random import randint
 mineflayer = require('mineflayer')
 pathfinder = require('mineflayer-pathfinder')
@@ -21,7 +22,15 @@ def create_bot(username, port):
 
 def printTPS(bot, port):
   tps = bot.getTps()
+
+  #print(str(bot.players))
+  write_csv(tps, port)
   print("TPS: {} Port: {}".format(tps, port))
+
+def write_csv(tps, port):
+  with open('tps_log.csv', 'a+', newline="") as csvfile:
+    writer = csv.writer(csvfile, delimiter = ',', quoting=csv.QUOTE_MINIMAL)
+    writer.writerow([int(time.time()),tps,port])
 
 if __name__ == "__main__":
   port_min = 25565

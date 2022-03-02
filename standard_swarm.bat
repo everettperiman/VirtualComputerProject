@@ -1,0 +1,12 @@
+start python swarm_cli.py 10 192.168.1.126 25565 5 5
+start python swarm_cli.py 10 192.168.1.126 25566 5 5
+start python swarm_cli.py 10 192.168.1.126 25567 5 5
+start python swarm_cli.py 10 192.168.1.126 25568 5 5
+start python swarm_cli.py 10 192.168.1.126 25569 5 5
+start python swarm_cli.py 10 192.168.1.126 25570 5 5
+start python swarm_cli.py 10 192.168.1.126 25571 5 5
+start python swarm_cli.py 10 192.168.1.126 25572 5 5
+start python swarm_cli.py 10 192.168.1.126 25573 5 5
+start python swarm_cli.py 10 192.168.1.126 25574 5 5
+start python swarm_cli.py 10 192.168.1.126 25575 5 5
+start python swarm_cli.py 10 192.168.1.126 25576 5 5
